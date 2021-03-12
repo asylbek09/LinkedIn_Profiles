@@ -1,0 +1,8 @@
+.circle {
+  border-radius: 50%;
+}
+#profiles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
