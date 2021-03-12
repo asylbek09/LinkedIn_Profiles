@@ -9,8 +9,9 @@ server.use(cors());
 server.use(express.urlencoded({ extended: true }));
 server.use(express.json());
 
+// process.env.PORT
 // create port and listen to it
-const PORT = "8080";
+const PORT = "8080" || process.env.PORT;
 server.listen(PORT, () => console.log(`Listening on PORT: ${PORT}`));
 
 // access to DB
